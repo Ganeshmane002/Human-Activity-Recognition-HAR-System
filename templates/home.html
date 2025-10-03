@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Activity Recognition</title>
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">HAR Predictor</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/predict">Predict</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-text">
+            <h1>Welcome to the Human Activity Recognition System</h1>
+            <p>
+                This project uses advanced sensor data and machine learning models to accurately predict human activities
+                such as walking, sitting, standing, and more. Built using Python, Flask, and a Logistic Regression model,
+                this system processes real-time or static input from accelerometers and gyroscopes to classify activities.
+            </p>
+        </div>
+        <div class="hero-image">
+            <img src="/static/humanactivity.jpg" alt="Human Activity">
+        </div>
+    </header>
+
+    <section class="info-section">
+        <h2>About This Project</h2>
+        <p>
+            The Human Activity Recognition (HAR) system leverages wearable sensor data to classify six core activities:
+            WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LYING. The data is processed using
+            StandardScaler and predictions are made with a trained Logistic Regression model. This can be used in
+            healthcare monitoring, fitness tracking, and smart environments.
+        </p>
+        <div class="image-gallery">
+            <img src="/static/walk.jpg" alt="Walking">
+            <img src="/static/sit.jpg" alt="Sitting">
+            <img src="/static/lying.jpg" alt="Lying">
+            <img src="/static/stand.jpg" alt="STANDING">
+            <img src="/static/walk_up.jpg" alt="WALKING_UPSTAIRS">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Human Activity Recognition Project | Developed By Ganesh Mane.</p>
+    </footer>
+</body>
+</html>

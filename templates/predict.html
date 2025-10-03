@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Activity</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='predict.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">HAR System</div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/predict">Predict</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <h2>Human Activity Recognition</h2>
+        <h3>Predict Activity based on sensor data</h3>
+        <form action="/predict" method="post" class="predict-form">
+            {% for col in columns %}
+            <div class="form-group">
+                <label for="{{ col }}">{{ col }}</label>
+                <input type="number" step="any" name="{{ col }}" id="{{ col }}" value="{{ default_values[col] }}" required>
+            </div>
+            {% endfor %}
+            <button type="submit">Predict Activity</button>
+        </form>
+
+        {% if prediction %}
+        <h3 class="result">Predicted Activity: <span>{{ prediction }}</span></h3>
+        {% endif %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Human Activity Recognition | Developed By Ganesh Mane.</p>
+    </footer>
+</body>
+</html>
