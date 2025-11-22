@@ -68,19 +68,19 @@ Both contain:
 
 App Features:
 
-- ⭐ User-friendly HTML form
-- ⭐ Inputs are passed to trained ML model
-- ⭐ Model returns predicted activity
-- ⭐ Clean UI with CSS
+- User-friendly HTML form
+- Inputs are passed to trained ML model
+- Model returns predicted activity
+- Clean UI with CSS
 
 
 🚀 How to Run Locally
 
-- 1. Install Dependencies
+- Install Dependencies
 pip install -r requirements.txt
 
-- 2. Run Flask App
+- Run Flask App
 python app.py
 
-- 3. Open in Browser
+- Open in Browser
 http://127.0.0.1:5000
